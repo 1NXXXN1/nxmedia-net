@@ -23,7 +23,7 @@ class ApiInstance {
     this.axios = axios.create({
       baseURL: API_URL,
       headers: {
-        'X-API-KEY: getKey()
+        'X-API-KEY': getKey(),
         'Content-Type': 'application/json',
       },
     });
