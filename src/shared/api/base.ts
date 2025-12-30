@@ -25,6 +25,7 @@ class ApiInstance {
       headers: {
         'X-API-KEY': getKey(),
         'Content-Type': 'application/json',
+        'User-Agent': 'Mozilla/5.0 (Netlify; Next.js)',
       },
     });
   }
