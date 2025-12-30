@@ -1,4 +1,4 @@
-const KP_KEYS = process.env.KP_API_KEYS?.split(",", { next: { revalidate: 3600 } }) || [];
+const KP_KEYS = process.env.KP_API_KEYS?.split(",") || [];
 let KP_INDEX = 0;
 function getKey() {
   const key = KP_KEYS[KP_INDEX];
